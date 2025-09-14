@@ -1,0 +1,99 @@
+2025-09-13 09:48:41,627 - INFO - === PCAP DATA EXTRACTOR - PHASE 1 ===
+2025-09-13 09:48:41,628 - INFO - Cybersecurity Dataset Creation Project
+2025-09-13 09:48:41,628 - INFO - PCAP directory: /home/jteba/REPOSITORIOS/MASTER/modulo 5/tarea1/pcaps/pcaps_eval
+2025-09-13 09:48:41,628 - INFO - Output CSV: /home/jteba/REPOSITORIOS/MASTER/modulo 5/tarea1/datos_extraidos.csv
+2025-09-13 09:48:41,628 - INFO - Found 37 PCAP files to process
+2025-09-13 09:48:41,629 - INFO - Starting extraction from 37 PCAP files...
+2025-09-13 09:48:41,629 - INFO - Processing: 054735c2dde5c2236d231a331d3c7b49.pcapng
+2025-09-13 09:48:41,746 - INFO - 054735c2dde5c2236d231a331d3c7b49.pcapng: 300 packets kept, 18 filtered out of 318 total
+2025-09-13 09:48:41,746 - INFO - Processing: 2572103306cb9e18cab67db3ffb85253.pcapng
+2025-09-13 09:48:41,844 - INFO - 2572103306cb9e18cab67db3ffb85253.pcapng: 11 packets kept, 25 filtered out of 36 total
+2025-09-13 09:48:41,844 - INFO - Processing: 268cf23292607f43072b3b186e17e278ec7bd03055c3903a14f4a82b5b92d1a5.pcapng
+2025-09-13 09:48:41,981 - INFO - 268cf23292607f43072b3b186e17e278ec7bd03055c3903a14f4a82b5b92d1a5.pcapng: 13 packets kept, 25 filtered out of 38 total
+2025-09-13 09:48:41,981 - INFO - Processing: 3401f502acb011bccc33e3f9ae0f1c67.pcapng
+2025-09-13 09:48:42,135 - INFO - 3401f502acb011bccc33e3f9ae0f1c67.pcapng: 226 packets kept, 24 filtered out of 250 total
+2025-09-13 09:48:42,135 - INFO - Processing: 62936a39f57abf8d8fca645eea956ebb.pcapng
+2025-09-13 09:48:42,331 - INFO - 62936a39f57abf8d8fca645eea956ebb.pcapng: 1785 packets kept, 19 filtered out of 1804 total
+2025-09-13 09:48:42,331 - INFO - Processing: 7723d79c84d5ce6f8b002297a001fa1e73c2033436df210bacc1798b063c0a40.pcapng
+2025-09-13 09:48:42,487 - INFO - 7723d79c84d5ce6f8b002297a001fa1e73c2033436df210bacc1798b063c0a40.pcapng: 24 packets kept, 16 filtered out of 40 total
+2025-09-13 09:48:42,487 - INFO - Processing: 7a76784a0caca007cbd828e235f35a57e4b69fc8db5293d8dc932681ab0fafd3.pcapng
+2025-09-13 09:48:42,689 - INFO - 7a76784a0caca007cbd828e235f35a57e4b69fc8db5293d8dc932681ab0fafd3.pcapng: 1849 packets kept, 63 filtered out of 1912 total
+2025-09-13 09:48:42,689 - INFO - Processing: a094aaf3ad7223f8f98bd6d179ec083c879cfa59a2a719e7f3ba463a7341e61e.pcapng
+2025-09-13 09:48:42,888 - INFO - a094aaf3ad7223f8f98bd6d179ec083c879cfa59a2a719e7f3ba463a7341e61e.pcapng: 81 packets kept, 18 filtered out of 99 total
+2025-09-13 09:48:42,888 - INFO - Processing: a18a1d93563902abbc7a40db68fe4388.pcapng
+2025-09-13 09:48:43,133 - INFO - a18a1d93563902abbc7a40db68fe4388.pcapng: 981 packets kept, 85 filtered out of 1066 total
+2025-09-13 09:48:43,134 - INFO - Processing: b0874c7d7383bf65e418bd4cfc9cd16f.pcapng
+2025-09-13 09:48:43,326 - INFO - b0874c7d7383bf65e418bd4cfc9cd16f.pcapng: 1277 packets kept, 16 filtered out of 1293 total
+2025-09-13 09:48:43,326 - INFO - Processing: b8eceeb0752e315c83c5131459438efb.pcapng
+2025-09-13 09:48:43,457 - INFO - b8eceeb0752e315c83c5131459438efb.pcapng: 32 packets kept, 26 filtered out of 58 total
+2025-09-13 09:48:43,458 - INFO - Processing: c78cd40c003fd0ef8333990676b1e896.pcapng
+2025-09-13 09:48:43,596 - INFO - c78cd40c003fd0ef8333990676b1e896.pcapng: 35 packets kept, 42 filtered out of 77 total
+2025-09-13 09:48:43,596 - INFO - Processing: cbbd6fbab688a84eb105b713794d937d.pcapng
+2025-09-13 09:48:43,839 - INFO - cbbd6fbab688a84eb105b713794d937d.pcapng: 1465 packets kept, 728 filtered out of 2193 total
+2025-09-13 09:48:43,839 - INFO - Processing: cfe9bf779632592f0cc868ab186c93f6.pcapng
+2025-09-13 09:48:43,998 - INFO - cfe9bf779632592f0cc868ab186c93f6.pcapng: 41 packets kept, 16 filtered out of 57 total
+2025-09-13 09:48:43,999 - INFO - Processing: d057a74b89df781ce2dc24ecbf448d14.pcapng
+2025-09-13 09:48:45,149 - INFO - d057a74b89df781ce2dc24ecbf448d14.pcapng: 40817 packets kept, 167 filtered out of 40984 total
+2025-09-13 09:48:45,150 - INFO - Processing: d08f8f8daf13ffbc4eca6fd40ba5a1e6.pcapng
+2025-09-13 09:48:45,393 - INFO - d08f8f8daf13ffbc4eca6fd40ba5a1e6.pcapng: 2878 packets kept, 32 filtered out of 2910 total
+2025-09-13 09:48:45,394 - INFO - Processing: d2dde16d37fa298ba844342a1225bda7028c869829f605f1cf10ed14c8d635c5.pcapng
+2025-09-13 09:48:45,516 - INFO - d2dde16d37fa298ba844342a1225bda7028c869829f605f1cf10ed14c8d635c5.pcapng: 236 packets kept, 18 filtered out of 254 total
+2025-09-13 09:48:45,516 - INFO - Processing: d500ea1a07cbb42d50931a580888925858bfc12434649b3bea6cbb6449a2ce8a.pcapng
+2025-09-13 09:48:45,636 - INFO - d500ea1a07cbb42d50931a580888925858bfc12434649b3bea6cbb6449a2ce8a.pcapng: 220 packets kept, 80 filtered out of 300 total
+2025-09-13 09:48:45,636 - INFO - Processing: d5fae79e585c28c6888332f794ca3535.pcapng
+2025-09-13 09:48:45,808 - INFO - d5fae79e585c28c6888332f794ca3535.pcapng: 865 packets kept, 369 filtered out of 1234 total
+2025-09-13 09:48:45,808 - INFO - Processing: d896a70344f563564b69b669e778f5508dffe0f7f2f407095286a408d2cc7203.pcapng
+2025-09-13 09:48:45,924 - INFO - d896a70344f563564b69b669e778f5508dffe0f7f2f407095286a408d2cc7203.pcapng: 157 packets kept, 23 filtered out of 180 total
+2025-09-13 09:48:45,924 - INFO - Processing: d98a8d8d55bee15d378812c51f68f3b8.pcapng
+2025-09-13 09:48:46,089 - INFO - d98a8d8d55bee15d378812c51f68f3b8.pcapng: 74 packets kept, 41 filtered out of 115 total
+2025-09-13 09:48:46,089 - INFO - Processing: da15debf6a99bb1d64f1da748d8dbc03.pcapng
+2025-09-13 09:48:46,206 - INFO - da15debf6a99bb1d64f1da748d8dbc03.pcapng: 175 packets kept, 70 filtered out of 245 total
+2025-09-13 09:48:46,206 - INFO - Processing: e257bcb598edca2286eabba28340cb11.pcapng
+2025-09-13 09:48:46,338 - INFO - e257bcb598edca2286eabba28340cb11.pcapng: 168 packets kept, 22 filtered out of 190 total
+2025-09-13 09:48:46,338 - INFO - Processing: e33f38f823ffb258becd747f2c685e26.pcapng
+2025-09-13 09:48:46,469 - INFO - e33f38f823ffb258becd747f2c685e26.pcapng: 14 packets kept, 26 filtered out of 40 total
+2025-09-13 09:48:46,469 - INFO - Processing: e486965272826dffea2fd5e9fa7c2d25.pcapng
+2025-09-13 09:48:46,597 - INFO - e486965272826dffea2fd5e9fa7c2d25.pcapng: 20 packets kept, 45 filtered out of 65 total
+2025-09-13 09:48:46,598 - INFO - Processing: e57143b5bcfd15b6e51f4b078fecc275.pcapng
+2025-09-13 09:48:46,744 - INFO - e57143b5bcfd15b6e51f4b078fecc275.pcapng: 3 packets kept, 35 filtered out of 38 total
+2025-09-13 09:48:46,744 - INFO - Processing: ec62bb2c8a23ea6a789629c6059e421f.pcapng
+2025-09-13 09:48:46,898 - INFO - ec62bb2c8a23ea6a789629c6059e421f.pcapng: 10 packets kept, 24 filtered out of 34 total
+2025-09-13 09:48:46,898 - INFO - Processing: ed32ca2ba2e815f48e340a0dfb343966.pcapng
+2025-09-13 09:48:47,024 - INFO - ed32ca2ba2e815f48e340a0dfb343966.pcapng: 97 packets kept, 27 filtered out of 124 total
+2025-09-13 09:48:47,024 - INFO - Processing: ee7efb79459492b7b71e2c31011fd390.pcapng
+2025-09-13 09:48:47,171 - INFO - ee7efb79459492b7b71e2c31011fd390.pcapng: 163 packets kept, 18 filtered out of 181 total
+2025-09-13 09:48:47,171 - INFO - Processing: efec40780a1127ee6180c0cd371f4735.pcapng
+2025-09-13 09:48:47,312 - INFO - efec40780a1127ee6180c0cd371f4735.pcapng: 16 packets kept, 31 filtered out of 47 total
+2025-09-13 09:48:47,312 - INFO - Processing: f09b0c25ae398e623532af066ee053c0.pcapng
+2025-09-13 09:48:47,421 - INFO - f09b0c25ae398e623532af066ee053c0.pcapng: 35 packets kept, 12 filtered out of 47 total
+2025-09-13 09:48:47,421 - INFO - Processing: f20a6e2cd02cdb2e9289170e09a1f34d.pcapng
+2025-09-13 09:48:47,557 - INFO - f20a6e2cd02cdb2e9289170e09a1f34d.pcapng: 210 packets kept, 75 filtered out of 285 total
+2025-09-13 09:48:47,557 - INFO - Processing: f35de16742223478ecb0f8d241c1442168a7b593a0c0af572981b832ed9b21e3.pcapng
+2025-09-13 09:48:47,645 - INFO - f35de16742223478ecb0f8d241c1442168a7b593a0c0af572981b832ed9b21e3.pcapng: 37 packets kept, 75 filtered out of 112 total
+2025-09-13 09:48:47,645 - INFO - Processing: f3a3961a4dd36872cf6ff1c2986e7664.pcapng
+2025-09-13 09:48:47,845 - INFO - f3a3961a4dd36872cf6ff1c2986e7664.pcapng: 414 packets kept, 19 filtered out of 433 total
+2025-09-13 09:48:47,845 - INFO - Processing: f52af7069e93390850ca98da8b66971f.pcapng
+2025-09-13 09:48:48,006 - INFO - f52af7069e93390850ca98da8b66971f.pcapng: 14 packets kept, 21 filtered out of 35 total
+2025-09-13 09:48:48,007 - INFO - Processing: fc4cbbd09c022bb409deea243de4cba6.pcapng
+2025-09-13 09:48:48,147 - INFO - fc4cbbd09c022bb409deea243de4cba6.pcapng: 3 packets kept, 31 filtered out of 34 total
+2025-09-13 09:48:48,147 - INFO - Processing: fc8ebeabfafe31977b3da2704be4bda2.pcapng
+2025-09-13 09:48:48,334 - INFO - fc8ebeabfafe31977b3da2704be4bda2.pcapng: 916 packets kept, 67 filtered out of 983 total
+2025-09-13 09:48:48,425 - INFO - Successfully created /home/jteba/REPOSITORIOS/MASTER/modulo 5/tarea1/datos_extraidos.csv with 55662 records
+2025-09-13 09:48:48,425 - INFO - 
+=== PCAP EXTRACTION SUMMARY ===
+Files processed: 37
+Files failed: 0
+Total packets analyzed: 58,111
+Packets kept: 55,662
+Packets filtered: 2,449
+Filter rate: 4.2%
+Output file: /home/jteba/REPOSITORIOS/MASTER/modulo 5/tarea1/datos_extraidos.csv
+================================
+        
+2025-09-13 09:48:48,497 - INFO - CSV validation passed: 55662 records, 11 columns
+2025-09-13 09:48:48,501 - INFO - Sample protocols found: protocol
+TCP     49032
+UDP      6613
+ICMP       17
+Name: count, dtype: int64
+2025-09-13 09:48:48,502 - INFO - Phase 1 extraction completed successfully!

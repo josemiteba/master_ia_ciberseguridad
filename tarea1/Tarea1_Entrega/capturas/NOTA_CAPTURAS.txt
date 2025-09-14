@@ -1,0 +1,35 @@
+NOTA SOBRE CAPTURAS DE PANTALLA
+==============================
+
+Las capturas de pantalla mencionadas en el informe deben ser creadas manualmente
+durante la ejecución real del pipeline:
+
+CAPTURAS REQUERIDAS:
+===================
+
+📸 FASE 1 - EXTRACCIÓN:
+- fase1_extraccion_proceso.png: Terminal mostrando ejecución de tshark
+- fase1_archivo_generado.png: Explorador de archivos mostrando datos_extraidos.csv
+
+📸 FASE 2 - LIMPIEZA:
+- fase2_limpieza_proceso.png: Terminal mostrando proceso de limpieza
+- fase2_estadisticas.png: Salida con estadísticas de calidad de datos
+
+📸 FASE 3 - ANONIMIZACIÓN:
+- fase3_anonimizacion_proceso.png: Proceso de hash SHA-256 ejecutándose
+- fase3_validacion_gdpr.png: Validaciones de cumplimiento GDPR
+
+📸 FASE 4 - BASE DE DATOS:
+- fase4_database_creation.png: Creación de tabla e índices SQLite
+- fase4_consultas_sql.png: Ejecución de las 6 consultas analíticas
+
+INSTRUCCIONES:
+==============
+
+1. Ejecutar: python dataset_creation.py --directorio-pcaps ./pcaps/pcaps_eval
+2. Capturar pantallas durante cada fase del proceso
+3. Nombrar archivos exactamente como se indica arriba
+4. Incluir en esta carpeta para entrega completa
+
+Estas capturas documentan visualmente todo el proceso de creación del dataset
+y son parte integral de la documentación del proyecto.

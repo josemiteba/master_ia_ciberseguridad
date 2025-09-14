@@ -1,0 +1,133 @@
+RESULTADOS ANALÍTICOS DE BASE DE DATOS DE CIBERSEGURIDAD
+==================================================
+Base de datos: cybersecurity_dataset.db
+Generado: 2025-09-13 19:57:07
+
+
+------------------------------------------------------------
+QUERY 1. Total Records
+------------------------------------------------------------
+SQL: SELECT COUNT(*) as total_records FROM network_traffic;
+Execution Time: 0.0000 seconds
+Rows Returned: 1
+
+  total_records
+------------------
+          10548
+
+------------------------------------------------------------
+QUERY 2. Top 10 Destination IPs
+------------------------------------------------------------
+SQL: SELECT dst_ip_anonimizada, COUNT(*) as count 
+                         FROM network_traffic 
+                         GROUP BY dst_ip_anonimizada 
+                         ORDER BY count DESC 
+                         LIMIT 10;
+Execution Time: 0.0006 seconds
+Rows Returned: 10
+
+    dst_ip_anonimizada |           count
+----------------------------------------
+4e5c743ef893bc85 |            4952
+80537bff259cc51b |            2482
+febddae221bc6362 |             564
+05bc382073d4f48f |             276
+d24629fabb2f0a69 |             192
+363dbd2d4edefa34 |             188
+63ae3d74d4ffd1e7 |             168
+c537f22412509c80 |             158
+186a8ae86d12e14c |             112
+d4541e011da0b425 |             110
+
+------------------------------------------------------------
+QUERY 3. Most Queried Domains
+------------------------------------------------------------
+SQL: SELECT dns_query, COUNT(*) as count 
+                         FROM network_traffic 
+                         WHERE dns_query IS NOT NULL AND dns_query != ''
+                         GROUP BY dns_query 
+                         ORDER BY count DESC 
+                         LIMIT 10;
+Execution Time: 0.0004 seconds
+Rows Returned: 10
+
+          dns_query |           count
+-------------------------------------
+dns.msftncsi.com |             136
+pagead2.googlesyndication.com |              44
+sourceforge.net |              44
+armmf.adobe.com |              40
+firefox.settings.services.mozilla.com |              40
+ www.google.com |              40
+ctldl.windowsupdate.com |              36
+ r3.o.lencr.org |              36
+www.gstatic.com |              36
+ocsp.digicert.com |              32
+
+------------------------------------------------------------
+QUERY 4. Common Destination Ports
+------------------------------------------------------------
+SQL: SELECT dst_port, COUNT(*) as count,
+                                 CASE 
+                                   WHEN dst_port = 80 THEN 'HTTP'
+                                   WHEN dst_port = 443 THEN 'HTTPS'
+                                   WHEN dst_port = 53 THEN 'DNS'
+                                   ELSE 'Other'
+                                 END as service_type
+                         FROM network_traffic 
+                         WHERE dst_port IS NOT NULL 
+                         GROUP BY dst_port 
+                         ORDER BY count DESC 
+                         LIMIT 10;
+Execution Time: 0.0005 seconds
+Rows Returned: 10
+
+           dst_port |           count |    service_type
+-------------------------------------------------------
+           53.0 |            2482 |             DNS
+          443.0 |            1994 |           HTTPS
+           80.0 |             606 |            HTTP
+         1900.0 |             170 |           Other
+         4132.0 |             110 |           Other
+          138.0 |              66 |           Other
+          547.0 |              42 |           Other
+        49269.0 |              34 |           Other
+        49275.0 |              34 |           Other
+        49276.0 |              34 |           Other
+
+------------------------------------------------------------
+QUERY 5. Packet Length Statistics
+------------------------------------------------------------
+SQL: SELECT 
+                             AVG(length) as avg_length,
+                             MAX(length) as max_length,
+                             MIN(length) as min_length,
+                             CAST(AVG(length) AS INTEGER) as avg_length_int
+                         FROM network_traffic 
+                         WHERE length IS NOT NULL;
+Execution Time: 0.0009 seconds
+Rows Returned: 1
+
+         avg_length |      max_length |      min_length |  avg_length_int
+-------------------------------------------------------------------------
+113.54702313234736 |            1399 |              42 |             113
+
+------------------------------------------------------------
+QUERY 6. Protocol Distribution
+------------------------------------------------------------
+SQL: SELECT protocol, 
+                                 COUNT(*) as count,
+                                 ROUND(COUNT(*) * 100.0 / (SELECT COUNT(*) FROM network_traffic), 2) as percentage
+                         FROM network_traffic 
+                         WHERE protocol IS NOT NULL
+                         GROUP BY protocol 
+                         ORDER BY count DESC;
+Execution Time: 0.0004 seconds
+Rows Returned: 3
+
+           protocol |           count |      percentage
+-------------------------------------------------------
+            UDP |            5418 |           51.37
+            TCP |            5118 |           48.52
+           ICMP |              12 |            0.11
+

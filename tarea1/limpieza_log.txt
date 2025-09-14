@@ -1,0 +1,78 @@
+2025-09-13 10:03:38,473 - INFO - Starting cybersecurity data cleaning pipeline...
+2025-09-13 10:03:38,473 - INFO - Loading data from /home/jteba/REPOSITORIOS/MASTER/modulo 5/tarea1/datos_extraidos.csv
+2025-09-13 10:03:38,512 - INFO - Loaded 55662 records with 11 columns
+2025-09-13 10:03:38,512 - INFO - Columns: ['timestamp', 'src_ip', 'dst_ip', 'protocol', 'src_port', 'dst_port', 'length', 'dns_query', 'http_host', 'http_path', 'user_agent']
+2025-09-13 10:03:38,512 - INFO - Starting comprehensive data cleaning process...
+2025-09-13 10:03:38,514 - INFO - Phase 1: Validating required fields...
+2025-09-13 10:03:38,523 - INFO - Phase 2: Validating IP addresses...
+2025-09-13 10:03:38,668 - INFO - Phase 3: Validating port numbers...
+2025-09-13 10:03:38,736 - INFO - Phase 4: Validating timestamps...
+2025-09-13 10:03:38,971 - INFO - Phase 5: Validating protocols...
+2025-09-13 10:03:38,982 - INFO - Phase 6: Identifying and preserving attack patterns...
+2025-09-13 10:03:39,404 - INFO - Identified and preserved 55655 records with potential attack patterns
+2025-09-13 10:03:39,404 - INFO - Phase 7: Removing duplicates...
+2025-09-13 10:03:39,420 - INFO - Removed 22935 exact duplicate records
+2025-09-13 10:03:39,420 - INFO - Identifying flow duplicates...
+2025-09-13 10:03:40,932 - INFO - Removed 26139 flow duplicate records
+2025-09-13 10:03:40,937 - INFO - Phase 8: Processing optional fields...
+2025-09-13 10:03:40,938 - INFO - Field 'dns_query': 3949 null values, 0 empty strings
+2025-09-13 10:03:40,939 - INFO - Field 'http_host': 6470 null values, 0 empty strings
+2025-09-13 10:03:40,939 - INFO - Field 'http_path': 6470 null values, 0 empty strings
+2025-09-13 10:03:40,940 - INFO - Field 'user_agent': 6473 null values, 0 empty strings
+2025-09-13 10:03:40,940 - INFO - Cleaning completed. Retained 6588 out of 55662 records (11.84% retention rate)
+2025-09-13 10:03:40,942 - INFO - Generating detailed cleaning report...
+2025-09-13 10:03:40,944 - INFO - ================================================================================
+2025-09-13 10:03:40,944 - INFO - CYBERSECURITY DATA CLEANING REPORT
+2025-09-13 10:03:40,944 - INFO - ================================================================================
+2025-09-13 10:03:40,944 - INFO - Date: 2025-09-13 10:03:40
+2025-09-13 10:03:40,944 - INFO - Input File: /home/jteba/REPOSITORIOS/MASTER/modulo 5/tarea1/datos_extraidos.csv
+2025-09-13 10:03:40,944 - INFO - Output File: /home/jteba/REPOSITORIOS/MASTER/modulo 5/tarea1/datos_limpios.csv
+2025-09-13 10:03:40,944 - INFO - 
+2025-09-13 10:03:40,944 - INFO - CLEANING STATISTICS:
+2025-09-13 10:03:40,944 - INFO - ----------------------------------------
+2025-09-13 10:03:40,944 - INFO - Total input records:              55,662
+2025-09-13 10:03:40,944 - INFO - Records after cleaning:           6,588
+2025-09-13 10:03:40,944 - INFO - Data retention rate:              11.84%
+2025-09-13 10:03:40,944 - INFO - 
+2025-09-13 10:03:40,944 - INFO - RECORDS REMOVED BY CATEGORY:
+2025-09-13 10:03:40,944 - INFO - ----------------------------------------
+2025-09-13 10:03:40,944 - INFO - Invalid IP addresses:             0
+2025-09-13 10:03:40,944 - INFO - Invalid port numbers:             0
+2025-09-13 10:03:40,944 - INFO - Invalid timestamps:               0
+2025-09-13 10:03:40,944 - INFO - Invalid protocols:                0
+2025-09-13 10:03:40,944 - INFO - Missing required fields:          0
+2025-09-13 10:03:40,944 - INFO - Exact duplicates:                 22,935
+2025-09-13 10:03:40,944 - INFO - Flow duplicates:                  26,139
+2025-09-13 10:03:40,944 - INFO - 
+2025-09-13 10:03:40,944 - INFO - Total records removed:            49,074
+2025-09-13 10:03:40,944 - INFO - 
+2025-09-13 10:03:40,944 - INFO - CYBERSECURITY PRESERVATION:
+2025-09-13 10:03:40,944 - INFO - ----------------------------------------
+2025-09-13 10:03:40,944 - INFO - Attack patterns preserved:        55,655
+2025-09-13 10:03:40,944 - INFO - 
+2025-09-13 10:03:40,944 - INFO - DATA QUALITY VALIDATION:
+2025-09-13 10:03:40,944 - INFO - ----------------------------------------
+2025-09-13 10:03:40,944 - INFO - Unique source IPs:                185
+2025-09-13 10:03:40,944 - INFO - Unique destination IPs:           203
+2025-09-13 10:03:40,944 - INFO - Protocol distribution:            {'TCP': 3737, 'UDP': 2835, 'ICMP': 16}
+2025-09-13 10:03:40,944 - INFO - Port range coverage:              53.0-65531.0 (src), 53.0-65531.0 (dst)
+2025-09-13 10:03:40,944 - INFO - Timestamp range:                  May 17, 2023 10:44:38.201312000 CEST to May 17, 2023 15:40:28.734744000 CEST
+2025-09-13 10:03:40,944 - INFO - 
+2025-09-13 10:03:40,945 - INFO - OPTIONAL FIELD COMPLETENESS:
+2025-09-13 10:03:40,945 - INFO - ----------------------------------------
+2025-09-13 10:03:40,945 - INFO - dns_query                 2,639 (40.1%)
+2025-09-13 10:03:40,945 - INFO - http_host                 118 (1.8%)
+2025-09-13 10:03:40,945 - INFO - http_path                 118 (1.8%)
+2025-09-13 10:03:40,945 - INFO - user_agent                115 (1.7%)
+2025-09-13 10:03:40,945 - INFO - 
+2025-09-13 10:03:40,945 - INFO - CLEANING VALIDATION:
+2025-09-13 10:03:40,945 - INFO - ----------------------------------------
+2025-09-13 10:03:40,945 - INFO - Retention rate target (>80%):     ✗ FAILED
+2025-09-13 10:03:40,945 - INFO - All columns preserved:            ✓ PASSED
+2025-09-13 10:03:40,945 - INFO - Temporal order maintained:        ✓ PASSED
+2025-09-13 10:03:40,945 - INFO - Attack signals preserved:         ✓ PASSED
+2025-09-13 10:03:40,945 - INFO - 
+2025-09-13 10:03:40,945 - INFO - ================================================================================
+2025-09-13 10:03:40,945 - INFO - Saving cleaned data to /home/jteba/REPOSITORIOS/MASTER/modulo 5/tarea1/datos_limpios.csv
+2025-09-13 10:03:40,957 - INFO - Successfully saved 6588 cleaned records
+2025-09-13 10:03:40,957 - INFO - Data cleaning pipeline completed successfully!

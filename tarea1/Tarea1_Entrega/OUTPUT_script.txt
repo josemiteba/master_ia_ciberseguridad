@@ -1,0 +1,331 @@
+python dataset_creation.py --directorio-pcaps ./pcaps/pcaps_eval
+2025-09-13 19:56:46,114 - INFO - ================================================================================
+2025-09-13 19:56:46,114 - INFO - INICIANDO PIPELINE COMPLETO DE CREACIÓN DE DATASET DE CIBERSEGURIDAD
+2025-09-13 19:56:46,114 - INFO - ================================================================================
+2025-09-13 19:56:46,114 - INFO - Fecha de inicio: 2025-09-13 19:56:46
+2025-09-13 19:56:46,114 - INFO - Directorio PCAP: ./pcaps/pcaps_eval
+2025-09-13 19:56:46,114 - INFO - 
+🔍 INICIANDO FASE 1: EXTRACCIÓN DE DATOS PCAP
+2025-09-13 19:56:46,114 - INFO - === INICIANDO FASE 1: EXTRACCIÓN DE DATOS PCAP ===
+2025-09-13 19:56:46,114 - INFO - Directorio PCAP: ./pcaps/pcaps_eval
+2025-09-13 19:56:46,114 - INFO - Archivo de salida: datos_extraidos.csv
+2025-09-13 19:56:46,196 - INFO - tshark encontrado correctamente
+2025-09-13 19:56:46,196 - INFO - Se encontraron 37 archivos PCAP para procesar
+2025-09-13 19:56:46,197 - INFO - Procesando: 054735c2dde5c2236d231a331d3c7b49.pcapng
+2025-09-13 19:56:46,307 - INFO - 054735c2dde5c2236d231a331d3c7b49.pcapng: 318 paquetes mantenidos, 0 filtrados de 318 totales
+2025-09-13 19:56:46,307 - INFO - Procesando: 2572103306cb9e18cab67db3ffb85253.pcapng
+2025-09-13 19:56:46,390 - INFO - 2572103306cb9e18cab67db3ffb85253.pcapng: 34 paquetes mantenidos, 0 filtrados de 34 totales
+2025-09-13 19:56:46,390 - INFO - Procesando: 268cf23292607f43072b3b186e17e278ec7bd03055c3903a14f4a82b5b92d1a5.pcapng
+2025-09-13 19:56:46,476 - INFO - 268cf23292607f43072b3b186e17e278ec7bd03055c3903a14f4a82b5b92d1a5.pcapng: 38 paquetes mantenidos, 0 filtrados de 38 totales
+2025-09-13 19:56:46,476 - INFO - Procesando: 3401f502acb011bccc33e3f9ae0f1c67.pcapng
+2025-09-13 19:56:46,582 - INFO - 3401f502acb011bccc33e3f9ae0f1c67.pcapng: 248 paquetes mantenidos, 0 filtrados de 248 totales
+2025-09-13 19:56:46,582 - INFO - Procesando: 62936a39f57abf8d8fca645eea956ebb.pcapng
+2025-09-13 19:56:46,715 - INFO - 62936a39f57abf8d8fca645eea956ebb.pcapng: 1804 paquetes mantenidos, 0 filtrados de 1804 totales
+2025-09-13 19:56:46,716 - INFO - Procesando: 7723d79c84d5ce6f8b002297a001fa1e73c2033436df210bacc1798b063c0a40.pcapng
+2025-09-13 19:56:46,809 - INFO - 7723d79c84d5ce6f8b002297a001fa1e73c2033436df210bacc1798b063c0a40.pcapng: 38 paquetes mantenidos, 0 filtrados de 38 totales
+2025-09-13 19:56:46,809 - INFO - Procesando: 7a76784a0caca007cbd828e235f35a57e4b69fc8db5293d8dc932681ab0fafd3.pcapng
+2025-09-13 19:56:46,948 - INFO - 7a76784a0caca007cbd828e235f35a57e4b69fc8db5293d8dc932681ab0fafd3.pcapng: 1910 paquetes mantenidos, 0 filtrados de 1910 totales
+2025-09-13 19:56:46,949 - INFO - Procesando: a094aaf3ad7223f8f98bd6d179ec083c879cfa59a2a719e7f3ba463a7341e61e.pcapng
+2025-09-13 19:56:47,034 - INFO - a094aaf3ad7223f8f98bd6d179ec083c879cfa59a2a719e7f3ba463a7341e61e.pcapng: 99 paquetes mantenidos, 0 filtrados de 99 totales
+2025-09-13 19:56:47,034 - INFO - Procesando: a18a1d93563902abbc7a40db68fe4388.pcapng
+2025-09-13 19:56:47,151 - INFO - a18a1d93563902abbc7a40db68fe4388.pcapng: 1066 paquetes mantenidos, 0 filtrados de 1066 totales
+2025-09-13 19:56:47,151 - INFO - Procesando: b0874c7d7383bf65e418bd4cfc9cd16f.pcapng
+2025-09-13 19:56:47,276 - INFO - b0874c7d7383bf65e418bd4cfc9cd16f.pcapng: 1293 paquetes mantenidos, 0 filtrados de 1293 totales
+2025-09-13 19:56:47,276 - INFO - Procesando: b8eceeb0752e315c83c5131459438efb.pcapng
+2025-09-13 19:56:47,380 - INFO - b8eceeb0752e315c83c5131459438efb.pcapng: 56 paquetes mantenidos, 0 filtrados de 56 totales
+2025-09-13 19:56:47,380 - INFO - Procesando: c78cd40c003fd0ef8333990676b1e896.pcapng
+2025-09-13 19:56:47,478 - INFO - c78cd40c003fd0ef8333990676b1e896.pcapng: 71 paquetes mantenidos, 0 filtrados de 71 totales
+2025-09-13 19:56:47,478 - INFO - Procesando: cbbd6fbab688a84eb105b713794d937d.pcapng
+2025-09-13 19:56:47,611 - INFO - cbbd6fbab688a84eb105b713794d937d.pcapng: 2193 paquetes mantenidos, 0 filtrados de 2193 totales
+2025-09-13 19:56:47,611 - INFO - Procesando: cfe9bf779632592f0cc868ab186c93f6.pcapng
+2025-09-13 19:56:47,709 - INFO - cfe9bf779632592f0cc868ab186c93f6.pcapng: 55 paquetes mantenidos, 0 filtrados de 55 totales
+2025-09-13 19:56:47,709 - INFO - Procesando: d057a74b89df781ce2dc24ecbf448d14.pcapng
+2025-09-13 19:56:48,680 - INFO - d057a74b89df781ce2dc24ecbf448d14.pcapng: 40972 paquetes mantenidos, 0 filtrados de 40972 totales
+2025-09-13 19:56:48,680 - INFO - Procesando: d08f8f8daf13ffbc4eca6fd40ba5a1e6.pcapng
+2025-09-13 19:56:48,821 - INFO - d08f8f8daf13ffbc4eca6fd40ba5a1e6.pcapng: 2910 paquetes mantenidos, 0 filtrados de 2910 totales
+2025-09-13 19:56:48,821 - INFO - Procesando: d2dde16d37fa298ba844342a1225bda7028c869829f605f1cf10ed14c8d635c5.pcapng
+2025-09-13 19:56:48,915 - INFO - d2dde16d37fa298ba844342a1225bda7028c869829f605f1cf10ed14c8d635c5.pcapng: 254 paquetes mantenidos, 0 filtrados de 254 totales
+2025-09-13 19:56:48,915 - INFO - Procesando: d500ea1a07cbb42d50931a580888925858bfc12434649b3bea6cbb6449a2ce8a.pcapng
+2025-09-13 19:56:49,008 - INFO - d500ea1a07cbb42d50931a580888925858bfc12434649b3bea6cbb6449a2ce8a.pcapng: 292 paquetes mantenidos, 0 filtrados de 292 totales
+2025-09-13 19:56:49,008 - INFO - Procesando: d5fae79e585c28c6888332f794ca3535.pcapng
+2025-09-13 19:56:49,131 - INFO - d5fae79e585c28c6888332f794ca3535.pcapng: 1234 paquetes mantenidos, 0 filtrados de 1234 totales
+2025-09-13 19:56:49,132 - INFO - Procesando: d896a70344f563564b69b669e778f5508dffe0f7f2f407095286a408d2cc7203.pcapng
+2025-09-13 19:56:49,221 - INFO - d896a70344f563564b69b669e778f5508dffe0f7f2f407095286a408d2cc7203.pcapng: 178 paquetes mantenidos, 0 filtrados de 178 totales
+2025-09-13 19:56:49,221 - INFO - Procesando: d98a8d8d55bee15d378812c51f68f3b8.pcapng
+2025-09-13 19:56:49,308 - INFO - d98a8d8d55bee15d378812c51f68f3b8.pcapng: 115 paquetes mantenidos, 0 filtrados de 115 totales
+2025-09-13 19:56:49,308 - INFO - Procesando: da15debf6a99bb1d64f1da748d8dbc03.pcapng
+2025-09-13 19:56:49,409 - INFO - da15debf6a99bb1d64f1da748d8dbc03.pcapng: 245 paquetes mantenidos, 0 filtrados de 245 totales
+2025-09-13 19:56:49,409 - INFO - Procesando: e257bcb598edca2286eabba28340cb11.pcapng
+2025-09-13 19:56:49,498 - INFO - e257bcb598edca2286eabba28340cb11.pcapng: 190 paquetes mantenidos, 0 filtrados de 190 totales
+2025-09-13 19:56:49,498 - INFO - Procesando: e33f38f823ffb258becd747f2c685e26.pcapng
+2025-09-13 19:56:49,609 - INFO - e33f38f823ffb258becd747f2c685e26.pcapng: 36 paquetes mantenidos, 0 filtrados de 36 totales
+2025-09-13 19:56:49,609 - INFO - Procesando: e486965272826dffea2fd5e9fa7c2d25.pcapng
+2025-09-13 19:56:49,707 - INFO - e486965272826dffea2fd5e9fa7c2d25.pcapng: 59 paquetes mantenidos, 0 filtrados de 59 totales
+2025-09-13 19:56:49,707 - INFO - Procesando: e57143b5bcfd15b6e51f4b078fecc275.pcapng
+2025-09-13 19:56:49,789 - INFO - e57143b5bcfd15b6e51f4b078fecc275.pcapng: 36 paquetes mantenidos, 0 filtrados de 36 totales
+2025-09-13 19:56:49,789 - INFO - Procesando: ec62bb2c8a23ea6a789629c6059e421f.pcapng
+2025-09-13 19:56:49,886 - INFO - ec62bb2c8a23ea6a789629c6059e421f.pcapng: 32 paquetes mantenidos, 0 filtrados de 32 totales
+2025-09-13 19:56:49,886 - INFO - Procesando: ed32ca2ba2e815f48e340a0dfb343966.pcapng
+2025-09-13 19:56:49,985 - INFO - ed32ca2ba2e815f48e340a0dfb343966.pcapng: 124 paquetes mantenidos, 0 filtrados de 124 totales
+2025-09-13 19:56:49,985 - INFO - Procesando: ee7efb79459492b7b71e2c31011fd390.pcapng
+2025-09-13 19:56:50,074 - INFO - ee7efb79459492b7b71e2c31011fd390.pcapng: 181 paquetes mantenidos, 0 filtrados de 181 totales
+2025-09-13 19:56:50,074 - INFO - Procesando: efec40780a1127ee6180c0cd371f4735.pcapng
+2025-09-13 19:56:50,169 - INFO - efec40780a1127ee6180c0cd371f4735.pcapng: 43 paquetes mantenidos, 0 filtrados de 43 totales
+2025-09-13 19:56:50,169 - INFO - Procesando: f09b0c25ae398e623532af066ee053c0.pcapng
+2025-09-13 19:56:50,270 - INFO - f09b0c25ae398e623532af066ee053c0.pcapng: 47 paquetes mantenidos, 0 filtrados de 47 totales
+2025-09-13 19:56:50,270 - INFO - Procesando: f20a6e2cd02cdb2e9289170e09a1f34d.pcapng
+2025-09-13 19:56:50,361 - INFO - f20a6e2cd02cdb2e9289170e09a1f34d.pcapng: 281 paquetes mantenidos, 0 filtrados de 281 totales
+2025-09-13 19:56:50,361 - INFO - Procesando: f35de16742223478ecb0f8d241c1442168a7b593a0c0af572981b832ed9b21e3.pcapng
+2025-09-13 19:56:50,446 - INFO - f35de16742223478ecb0f8d241c1442168a7b593a0c0af572981b832ed9b21e3.pcapng: 104 paquetes mantenidos, 0 filtrados de 104 totales
+2025-09-13 19:56:50,446 - INFO - Procesando: f3a3961a4dd36872cf6ff1c2986e7664.pcapng
+2025-09-13 19:56:50,546 - INFO - f3a3961a4dd36872cf6ff1c2986e7664.pcapng: 433 paquetes mantenidos, 0 filtrados de 433 totales
+2025-09-13 19:56:50,546 - INFO - Procesando: f52af7069e93390850ca98da8b66971f.pcapng
+2025-09-13 19:56:50,640 - INFO - f52af7069e93390850ca98da8b66971f.pcapng: 33 paquetes mantenidos, 0 filtrados de 33 totales
+2025-09-13 19:56:50,640 - INFO - Procesando: fc4cbbd09c022bb409deea243de4cba6.pcapng
+2025-09-13 19:56:50,739 - INFO - fc4cbbd09c022bb409deea243de4cba6.pcapng: 32 paquetes mantenidos, 0 filtrados de 32 totales
+2025-09-13 19:56:50,739 - INFO - Procesando: fc8ebeabfafe31977b3da2704be4bda2.pcapng
+2025-09-13 19:56:50,855 - INFO - fc8ebeabfafe31977b3da2704be4bda2.pcapng: 981 paquetes mantenidos, 0 filtrados de 981 totales
+2025-09-13 19:56:50,970 - INFO - Archivo CSV creado exitosamente: datos_extraidos.csv con 58,035 registros
+2025-09-13 19:56:50,970 - INFO - 
+=== RESUMEN EXTRACCIÓN PCAP ===
+2025-09-13 19:56:50,970 - INFO - Archivos procesados: 37
+2025-09-13 19:56:50,970 - INFO - Archivos fallidos: 0
+2025-09-13 19:56:50,970 - INFO - Total paquetes analizados: 58,035
+2025-09-13 19:56:50,970 - INFO - Paquetes mantenidos: 58,035
+2025-09-13 19:56:50,970 - INFO - Paquetes filtrados: 0
+2025-09-13 19:56:50,970 - INFO - Tasa de filtrado: 0.0%
+2025-09-13 19:56:50,971 - INFO - Archivo de salida: datos_extraidos.csv
+2025-09-13 19:56:50,971 - INFO - ===============================
+2025-09-13 19:56:51,015 - INFO - Distribución de protocolos encontrados:
+2025-09-13 19:56:51,015 - INFO -   TCP: 49,032
+2025-09-13 19:56:51,016 - INFO -   UDP: 8,986
+2025-09-13 19:56:51,016 - INFO -   OTHER: 11
+2025-09-13 19:56:51,016 - INFO -   ICMP: 6
+2025-09-13 19:56:51,016 - INFO - Fase 1 - Extracción completada exitosamente!
+2025-09-13 19:56:51,025 - INFO - ✅ Fase 1 completada exitosamente
+2025-09-13 19:56:51,025 - INFO - 
+🧹 INICIANDO FASE 2: LIMPIEZA DE DATOS
+2025-09-13 19:56:51,026 - INFO - === INICIANDO FASE 2: LIMPIEZA DE DATOS ===
+2025-09-13 19:56:51,026 - INFO - Archivo de entrada: datos_extraidos.csv
+2025-09-13 19:56:51,026 - INFO - Archivo de salida: datos_limpios.csv
+2025-09-13 19:56:51,062 - INFO - Datos cargados: 58,035 registros con 11 columnas
+2025-09-13 19:56:51,063 - INFO - Columnas: ['timestamp', 'src_ip', 'dst_ip', 'protocol', 'src_port', 'dst_port', 'length', 'dns_query', 'http_host', 'http_path', 'user_agent']
+2025-09-13 19:56:51,063 - INFO - Iniciando proceso de limpieza comprehensiva...
+2025-09-13 19:56:51,063 - INFO - Fase 1: Validando campos requeridos...
+2025-09-13 19:56:51,092 - INFO - Fase 2: Validando direcciones IP...
+2025-09-13 19:56:51,263 - INFO - Fase 3: Validando números de puerto...
+2025-09-13 19:56:51,303 - INFO - Fase 4: Validando timestamps...
+2025-09-13 19:56:51,303 - INFO - Columnas disponibles después de fase 3: ['timestamp', 'src_ip', 'dst_ip', 'protocol', 'src_port', 'dst_port', 'length', 'dns_query', 'http_host', 'http_path', 'user_agent']
+2025-09-13 19:56:51,303 - INFO - Registros restantes: 58024
+2025-09-13 19:57:01,236 - INFO - Fase 5: Validando protocolos...
+2025-09-13 19:57:01,240 - INFO - Fase 6: Identificando y preservando patrones de ataque...
+2025-09-13 19:57:01,249 - INFO - Identificados y preservados 23,024 registros con patrones de ataque
+2025-09-13 19:57:01,249 - INFO - Fase 7: Eliminando duplicados...
+2025-09-13 19:57:01,267 - INFO - Eliminados 22,935 duplicados exactos
+2025-09-13 19:57:01,267 - INFO - Identificando duplicados de flujo...
+2025-09-13 19:57:07,357 - INFO - Fase 8: Procesando campos opcionales...
+2025-09-13 19:57:07,357 - INFO - Campo 'dns_query': 2819 valores nulos, 0 cadenas vacías
+2025-09-13 19:57:07,358 - INFO - Campo 'http_host': 5187 valores nulos, 0 cadenas vacías
+2025-09-13 19:57:07,358 - INFO - Campo 'http_path': 5187 valores nulos, 0 cadenas vacías
+2025-09-13 19:57:07,358 - INFO - Campo 'user_agent': 5272 valores nulos, 0 cadenas vacías
+2025-09-13 19:57:07,358 - INFO - Limpieza completada. Retenidos 5,274 de 58,035 registros (9.09% tasa de retención)
+2025-09-13 19:57:07,358 - INFO - Generando reporte detallado de limpieza...
+2025-09-13 19:57:07,358 - INFO - ================================================================================
+2025-09-13 19:57:07,358 - INFO - REPORTE DE LIMPIEZA DE DATOS DE CIBERSEGURIDAD
+2025-09-13 19:57:07,358 - INFO - ================================================================================
+2025-09-13 19:57:07,358 - INFO - Fecha: 2025-09-13 19:57:07
+2025-09-13 19:57:07,358 - INFO - Archivo de entrada: datos_extraidos.csv
+2025-09-13 19:57:07,358 - INFO - Archivo de salida: datos_limpios.csv
+2025-09-13 19:57:07,358 - INFO - 
+2025-09-13 19:57:07,358 - INFO - ESTADÍSTICAS DE LIMPIEZA:
+2025-09-13 19:57:07,358 - INFO - ----------------------------------------
+2025-09-13 19:57:07,358 - INFO - Registros de entrada:              58,035
+2025-09-13 19:57:07,358 - INFO - Registros después de limpieza:     5,274
+2025-09-13 19:57:07,358 - INFO - Tasa de retención de datos:        9.09%
+2025-09-13 19:57:07,358 - INFO - 
+2025-09-13 19:57:07,358 - INFO - REGISTROS ELIMINADOS POR CATEGORÍA:
+2025-09-13 19:57:07,359 - INFO - ----------------------------------------
+2025-09-13 19:57:07,359 - INFO - Ips Invalidas                  11
+2025-09-13 19:57:07,359 - INFO - Puertos Invalidos              0
+2025-09-13 19:57:07,359 - INFO - Timestamps Invalidos           0
+2025-09-13 19:57:07,359 - INFO - Protocolos Invalidos           0
+2025-09-13 19:57:07,359 - INFO - Campos Requeridos Nulos        0
+2025-09-13 19:57:07,359 - INFO - Duplicados Exactos             22,935
+2025-09-13 19:57:07,359 - INFO - Duplicados Flujo               29,815
+2025-09-13 19:57:07,359 - INFO - 
+2025-09-13 19:57:07,359 - INFO - Total de registros eliminados:     52,761
+2025-09-13 19:57:07,359 - INFO - 
+2025-09-13 19:57:07,359 - INFO - PRESERVACIÓN DE CIBERSEGURIDAD:
+2025-09-13 19:57:07,359 - INFO - ----------------------------------------
+2025-09-13 19:57:07,359 - INFO - Patrones de ataque preservados:    23,024
+2025-09-13 19:57:07,359 - INFO - 
+2025-09-13 19:57:07,359 - INFO - VALIDACIÓN DE CALIDAD DE DATOS:
+2025-09-13 19:57:07,359 - INFO - ----------------------------------------
+2025-09-13 19:57:07,360 - INFO - IPs origen únicas:                 186
+2025-09-13 19:57:07,360 - INFO - IPs destino únicas:                206
+2025-09-13 19:57:07,360 - INFO - Distribución de protocolos:        {'UDP': 2709, 'TCP': 2559, 'ICMP': 6}
+2025-09-13 19:57:07,360 - INFO - Rango de puertos origen:           53.0-65531.0
+2025-09-13 19:57:07,360 - INFO - Rango de puertos destino:          53.0-65531.0
+2025-09-13 19:57:07,360 - INFO - Rango temporal:                    2023-05-17 10:44:32.540024 a 2023-05-17 15:40:19.706346
+2025-09-13 19:57:07,360 - INFO - 
+2025-09-13 19:57:07,360 - INFO - COMPLETITUD DE CAMPOS OPCIONALES:
+2025-09-13 19:57:07,360 - INFO - ----------------------------------------
+2025-09-13 19:57:07,360 - INFO - dns_query                 2,455 (46.5%)
+2025-09-13 19:57:07,360 - INFO - http_host                 87 (1.6%)
+2025-09-13 19:57:07,360 - INFO - http_path                 87 (1.6%)
+2025-09-13 19:57:07,360 - INFO - user_agent                2 (0.0%)
+2025-09-13 19:57:07,360 - INFO - 
+2025-09-13 19:57:07,360 - INFO - VALIDACIÓN DE LIMPIEZA:
+2025-09-13 19:57:07,360 - INFO - ----------------------------------------
+2025-09-13 19:57:07,360 - INFO - Tasa de retención objetivo (>80%)   ✗ FALLIDA
+2025-09-13 19:57:07,360 - INFO - Todas las columnas preservadas      ✓ PASADA
+2025-09-13 19:57:07,360 - INFO - Orden temporal mantenido            ✓ PASADA
+2025-09-13 19:57:07,360 - INFO - Señales de ataque preservadas       ✓ PASADA
+2025-09-13 19:57:07,360 - INFO - 
+2025-09-13 19:57:07,360 - INFO - ================================================================================
+2025-09-13 19:57:07,360 - INFO - Guardando datos limpios en datos_limpios.csv
+2025-09-13 19:57:07,377 - INFO - Guardados exitosamente 5,274 registros limpios
+2025-09-13 19:57:07,377 - INFO - Fase 2 - Limpieza completada exitosamente!
+2025-09-13 19:57:07,390 - INFO - ✅ Fase 2 completada exitosamente
+2025-09-13 19:57:07,392 - INFO - 
+🔒 INICIANDO FASE 3: ANONIMIZACIÓN DE DIRECCIONES IP
+2025-09-13 19:57:07,392 - INFO - === INICIANDO FASE 3: ANONIMIZACIÓN DE DIRECCIONES IP ===
+2025-09-13 19:57:07,392 - INFO - Archivo de entrada: datos_limpios.csv
+2025-09-13 19:57:07,392 - INFO - Archivo de salida: datos_anonimizados.csv
+2025-09-13 19:57:07,397 - INFO - Datos cargados: 5,274 registros
+2025-09-13 19:57:07,397 - INFO - Configuración de anonimización:
+2025-09-13 19:57:07,397 - INFO - - Método: SHA-256 con salt
+2025-09-13 19:57:07,397 - INFO - - Salt utilizado: cybersec_dataset_2025
+2025-09-13 19:57:07,397 - INFO - - Longitud de hash: 16 caracteres
+2025-09-13 19:57:07,398 - INFO - ANÁLISIS DE DATOS ORIGINALES:
+2025-09-13 19:57:07,398 - INFO - - IPs origen únicas: 186
+2025-09-13 19:57:07,398 - INFO - - IPs destino únicas: 206
+2025-09-13 19:57:07,398 - INFO - - Entradas nulas src_ip: 0
+2025-09-13 19:57:07,398 - INFO - - Entradas nulas dst_ip: 0
+2025-09-13 19:57:07,398 - INFO - Anonimizando direcciones IP...
+2025-09-13 19:57:07,406 - INFO - 
+=== REPORTE DE ANONIMIZACIÓN IP ===
+2025-09-13 19:57:07,406 - INFO - Generado: 2025-09-13 19:57:07
+2025-09-13 19:57:07,406 - INFO - Método de anonimización: SHA-256 con salt
+2025-09-13 19:57:07,406 - INFO - Salt utilizado: cybersec_dataset_2025
+2025-09-13 19:57:07,406 - INFO - Longitud de hash: 16 caracteres
+2025-09-13 19:57:07,406 - INFO - 
+2025-09-13 19:57:07,406 - INFO - === ESTADÍSTICAS DE PROCESAMIENTO ===
+2025-09-13 19:57:07,406 - INFO - Total de registros procesados: 5,274
+2025-09-13 19:57:07,406 - INFO - Tiempo de procesamiento: 0.00 segundos
+2025-09-13 19:57:07,406 - INFO - 
+2025-09-13 19:57:07,406 - INFO - === ANÁLISIS DE DATOS ORIGINALES ===
+2025-09-13 19:57:07,406 - INFO - Direcciones src_ip únicas: 186
+2025-09-13 19:57:07,406 - INFO - Direcciones dst_ip únicas: 206
+2025-09-13 19:57:07,406 - INFO - Entradas src_ip nulas: 0
+2025-09-13 19:57:07,406 - INFO - Entradas dst_ip nulas: 0
+2025-09-13 19:57:07,406 - INFO - 
+2025-09-13 19:57:07,406 - INFO - === RESULTADOS DE ANONIMIZACIÓN ===
+2025-09-13 19:57:07,406 - INFO - Direcciones src_ip procesadas: 5,274
+2025-09-13 19:57:07,406 - INFO - Direcciones dst_ip procesadas: 5,274
+2025-09-13 19:57:07,406 - INFO - Hashes src_ip_anonimizada únicos: 186
+2025-09-13 19:57:07,406 - INFO - Hashes dst_ip_anonimizada únicos: 206
+2025-09-13 19:57:07,406 - INFO - 
+2025-09-13 19:57:07,406 - INFO - === RESULTADOS DE VALIDACIÓN ===
+2025-09-13 19:57:07,406 - INFO - ✓ Preservación de conteo de IPs únicas: ✓ PASADA
+2025-09-13 19:57:07,406 - INFO - ✓ No patrones IP en campos anonimizados: ✓ PASADA
+2025-09-13 19:57:07,406 - INFO - ✓ Preservación de relaciones: ✓ PASADA
+2025-09-13 19:57:07,406 - INFO - ✓ Anonimización completa: ✓ PASADA
+2025-09-13 19:57:07,406 - INFO - 
+2025-09-13 19:57:07,406 - INFO - === CUMPLIMIENTO GDPR ===
+2025-09-13 19:57:07,406 - INFO - ✓ Anonimización irreversible (Artículo 4(5)): CONFIRMADA
+2025-09-13 19:57:07,406 - INFO - ✓ Protección basada en salt contra ataques de diccionario: IMPLEMENTADA
+2025-09-13 19:57:07,406 - INFO - ✓ No direcciones IP en texto plano en dataset final: VERIFICADA
+2025-09-13 19:57:07,406 - INFO - ✓ Consistencia de hash mantenida: VALIDADA
+2025-09-13 19:57:07,406 - INFO - 
+2025-09-13 19:57:07,406 - INFO - === CAMPOS ANALÍTICOS PRESERVADOS ===
+2025-09-13 19:57:07,406 - INFO - - timestamp (para análisis temporal)
+2025-09-13 19:57:07,406 - INFO - - protocol, src_port, dst_port, length (patrones de red)
+2025-09-13 19:57:07,406 - INFO - - dns_query, http_host, http_path, user_agent (análisis IOC)
+2025-09-13 19:57:07,406 - INFO - 
+2025-09-13 19:57:07,406 - INFO - === DETALLES TÉCNICOS DE ANONIMIZACIÓN ===
+2025-09-13 19:57:07,406 - INFO - Algoritmo de hash: SHA-256
+2025-09-13 19:57:07,406 - INFO - Salt: cybersec_dataset_2025
+2025-09-13 19:57:07,406 - INFO - Formato de salida: Primeros 16 caracteres de hash SHA-256
+2025-09-13 19:57:07,406 - INFO - Codificación: UTF-8
+2025-09-13 19:57:07,406 - INFO - Tamaño de cache: 207 IPs únicas
+2025-09-13 19:57:07,406 - INFO - 
+2025-09-13 19:57:07,406 - INFO - === CONFIRMACIÓN DE INTEGRIDAD DE DATOS ===
+2025-09-13 19:57:07,407 - INFO - Todas las verificaciones de validación pasaron exitosamente.
+2025-09-13 19:57:07,407 - INFO - Dataset listo para análisis de ciberseguridad con cumplimiento completo de GDPR.
+2025-09-13 19:57:07,407 - INFO - ===================================
+2025-09-13 19:57:07,418 - INFO - Datos anonimizados guardados exitosamente: datos_anonimizados.csv
+2025-09-13 19:57:07,418 - INFO - Total de registros en archivo final: 5,274
+2025-09-13 19:57:07,418 - INFO - Fase 3 - Anonimización completada exitosamente!
+2025-09-13 19:57:07,418 - INFO - ✅ Fase 3 completada exitosamente
+2025-09-13 19:57:07,418 - INFO - 
+🗄️  INICIANDO FASE 4: CREACIÓN DE BASE DE DATOS
+2025-09-13 19:57:07,418 - INFO - === INICIANDO FASE 4: CREACIÓN DE BASE DE DATOS ===
+2025-09-13 19:57:07,418 - INFO - Archivo de datos: datos_anonimizados.csv
+2025-09-13 19:57:07,418 - INFO - Base de datos: cybersecurity_dataset.db
+2025-09-13 19:57:07,425 - INFO - Datos cargados: 5,274 registros
+2025-09-13 19:57:07,425 - INFO - Base de datos SQLite creada/conectada exitosamente
+2025-09-13 19:57:07,425 - INFO - Tabla será creada automáticamente por pandas
+2025-09-13 19:57:07,425 - INFO - Preparando datos para inserción en base de datos...
+2025-09-13 19:57:07,427 - INFO - Iniciando inserción masiva de datos...
+2025-09-13 19:57:07,461 - INFO - Inserción completada en 0.03 segundos
+2025-09-13 19:57:07,462 - INFO - Registros insertados exitosamente: 10,548
+2025-09-13 19:57:07,462 - WARNING - Discrepancia: 5,274 registros esperados, 10,548 insertados
+2025-09-13 19:57:07,462 - INFO - Creando índices para optimización de consultas...
+2025-09-13 19:57:07,462 - INFO - Columnas en la tabla: ['timestamp', 'protocol', 'src_port', 'dst_port', 'length', 'dns_query', 'http_host', 'http_path', 'user_agent', 'src_ip_anonimizada', 'dst_ip_anonimizada']
+2025-09-13 19:57:07,462 - INFO - Índice 1/7 creado
+2025-09-13 19:57:07,462 - INFO - Índice 2/7 creado
+2025-09-13 19:57:07,462 - INFO - Índice 3/7 creado
+2025-09-13 19:57:07,462 - INFO - Índice 4/7 creado
+2025-09-13 19:57:07,462 - INFO - Índice 5/7 creado
+2025-09-13 19:57:07,462 - INFO - Índice 6/7 creado
+2025-09-13 19:57:07,462 - INFO - Índice 7/7 creado
+2025-09-13 19:57:07,462 - INFO - Todos los índices creados exitosamente
+2025-09-13 19:57:07,462 - INFO - Ejecutando consultas analíticas de ciberseguridad...
+2025-09-13 19:57:07,462 - INFO - Consulta '1. Total Records' ejecutada: 1 filas en 0.0000s
+2025-09-13 19:57:07,463 - INFO - Consulta '2. Top 10 Destination IPs' ejecutada: 10 filas en 0.0006s
+2025-09-13 19:57:07,463 - INFO - Consulta '3. Most Queried Domains' ejecutada: 10 filas en 0.0004s
+2025-09-13 19:57:07,464 - INFO - Consulta '4. Common Destination Ports' ejecutada: 10 filas en 0.0005s
+2025-09-13 19:57:07,465 - INFO - Consulta '5. Packet Length Statistics' ejecutada: 1 filas en 0.0009s
+2025-09-13 19:57:07,465 - INFO - Consulta '6. Protocol Distribution' ejecutada: 3 filas en 0.0004s
+2025-09-13 19:57:07,465 - INFO - Resultados de consultas guardados en: resultados_consultas.txt
+2025-09-13 19:57:07,466 - INFO - 
+=== REPORTE FINAL DE BASE DE DATOS ===
+2025-09-13 19:57:07,466 - INFO - Base de datos creada: cybersecurity_dataset.db
+2025-09-13 19:57:07,466 - INFO - Tabla principal: network_traffic
+2025-09-13 19:57:07,466 - INFO - Registros insertados: 10,548
+2025-09-13 19:57:07,466 - INFO - Tiempo total de inserción: 0.03 segundos
+2025-09-13 19:57:07,466 - INFO - Índices creados: 7
+2025-09-13 19:57:07,466 - INFO - Consultas analíticas ejecutadas: 6
+2025-09-13 19:57:07,466 - INFO - Tiempo total de consultas: 0.0029 segundos
+2025-09-13 19:57:07,466 - INFO -   1. Total Records: 1 filas, 0.0000s
+2025-09-13 19:57:07,466 - INFO -   2. Top 10 Destination IPs: 10 filas, 0.0006s
+2025-09-13 19:57:07,466 - INFO -   3. Most Queried Domains: 10 filas, 0.0004s
+2025-09-13 19:57:07,466 - INFO -   4. Common Destination Ports: 10 filas, 0.0005s
+2025-09-13 19:57:07,466 - INFO -   5. Packet Length Statistics: 1 filas, 0.0009s
+2025-09-13 19:57:07,466 - INFO -   6. Protocol Distribution: 3 filas, 0.0004s
+2025-09-13 19:57:07,466 - INFO - =====================================
+2025-09-13 19:57:07,467 - INFO - VERIFICACIÓN DE INTEGRIDAD:
+2025-09-13 19:57:07,467 - INFO - - Registros en base de datos: 10,548
+2025-09-13 19:57:07,467 - INFO - - IPs origen únicas: 186
+2025-09-13 19:57:07,467 - INFO - - IPs destino únicas: 206
+2025-09-13 19:57:07,467 - INFO - - Integridad de datos: ✓ VERIFICADA
+2025-09-13 19:57:07,467 - INFO - Fase 4 - Creación de base de datos completada exitosamente!
+2025-09-13 19:57:07,467 - INFO - ✅ Fase 4 completada exitosamente
+2025-09-13 19:57:07,467 - INFO - 
+================================================================================
+2025-09-13 19:57:07,467 - INFO - 🎉 PIPELINE COMPLETADO EXITOSAMENTE
+2025-09-13 19:57:07,467 - INFO - ================================================================================
+2025-09-13 19:57:07,467 - INFO - Tiempo total de ejecución: 21.35 segundos
+2025-09-13 19:57:07,467 - INFO - Fecha de finalización: 2025-09-13 19:57:07
+2025-09-13 19:57:07,467 - INFO - 
+📁 ARCHIVOS GENERADOS:
+2025-09-13 19:57:07,467 - INFO -   ✓ datos_extraidos.csv (4.79 MB)
+2025-09-13 19:57:07,467 - INFO -   ✓ datos_limpios.csv (0.42 MB)
+2025-09-13 19:57:07,467 - INFO -   ✓ datos_anonimizados.csv (0.47 MB)
+2025-09-13 19:57:07,467 - INFO -   ✓ cybersecurity_dataset.db (2.82 MB)
+2025-09-13 19:57:07,467 - INFO -   ✓ resultados_consultas.txt (0.01 MB)
+2025-09-13 19:57:07,467 - INFO - 
+📊 DATASET DE CIBERSEGURIDAD LISTO PARA ANÁLISIS
+2025-09-13 19:57:07,467 - INFO - ================================================================================
+2025-09-13 19:57:07,468 - INFO - 🎉 ÉXITO: Dataset de ciberseguridad creado exitosamente

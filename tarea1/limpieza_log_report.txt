@@ -1,0 +1,52 @@
+================================================================================
+CYBERSECURITY DATA CLEANING REPORT
+================================================================================
+Date: 2025-09-13 10:03:40
+Input File: /home/jteba/REPOSITORIOS/MASTER/modulo 5/tarea1/datos_extraidos.csv
+Output File: /home/jteba/REPOSITORIOS/MASTER/modulo 5/tarea1/datos_limpios.csv
+
+CLEANING STATISTICS:
+----------------------------------------
+Total input records:              55,662
+Records after cleaning:           6,588
+Data retention rate:              11.84%
+
+RECORDS REMOVED BY CATEGORY:
+----------------------------------------
+Invalid IP addresses:             0
+Invalid port numbers:             0
+Invalid timestamps:               0
+Invalid protocols:                0
+Missing required fields:          0
+Exact duplicates:                 22,935
+Flow duplicates:                  26,139
+
+Total records removed:            49,074
+
+CYBERSECURITY PRESERVATION:
+----------------------------------------
+Attack patterns preserved:        55,655
+
+DATA QUALITY VALIDATION:
+----------------------------------------
+Unique source IPs:                185
+Unique destination IPs:           203
+Protocol distribution:            {'TCP': 3737, 'UDP': 2835, 'ICMP': 16}
+Port range coverage:              53.0-65531.0 (src), 53.0-65531.0 (dst)
+Timestamp range:                  May 17, 2023 10:44:38.201312000 CEST to May 17, 2023 15:40:28.734744000 CEST
+
+OPTIONAL FIELD COMPLETENESS:
+----------------------------------------
+dns_query                 2,639 (40.1%)
+http_host                 118 (1.8%)
+http_path                 118 (1.8%)
+user_agent                115 (1.7%)
+
+CLEANING VALIDATION:
+----------------------------------------
+Retention rate target (>80%):     ✗ FAILED
+All columns preserved:            ✓ PASSED
+Temporal order maintained:        ✓ PASSED
+Attack signals preserved:         ✓ PASSED
+
+================================================================================
